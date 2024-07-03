@@ -1,0 +1,123 @@
+:root{
+ --background-color: #aaa69d;
+  --text-color: #2f3542;
+  --hover-color: #ff6b81;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  
+}
+body{
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+#header{
+  width: 100%px;
+  height: 100vh;
+  background-image: url(sakib4\ \(1\).png);
+  background-position: center;
+  background-size:cover ;
+ 
+}
+
+.continer{
+  padding: 18px 10%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+   font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav h1{
+  font-size: 40px;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+}
+
+nav h1 span{
+   color: #16a085;
+   font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 20px;
+  list-style: none;
+
+}
+ nav ul li:first-child {
+  background: #ff6b81;
+  padding: 8px;
+  border-radius: 8px;
+  /* box-shadow: 5px 5px 5px 5px; */
+  box-shadow: 0 0 5px #ff6b81;
+  color: #fff;
+ }
+ ul li a{
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+
+
+ ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: var(--hover-color);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+ }
+ 
+  ul li a:hover::after{
+    width: 100%;
+  }
+
+ 
+
+/* --------header-area----------- */
+
+
+.header_text{
+  margin-top: 20%;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.header_text h1{
+color: var(--hover-color);
+font-style: italic;
+font-family: '"Kaushan Script", cursive;';
+}
+
+.header_text p{
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
