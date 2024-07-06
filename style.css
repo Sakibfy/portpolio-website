@@ -10,9 +10,9 @@
 
 *{
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   
 }
 body{
@@ -23,7 +23,7 @@ body{
 #header{
   width: 100%px;
   height: 100vh;
-  background-image: url(sakib4\ \(1\).png);
+  background-image: url(images/pubg2.png); 
   background-position: center;
   background-size:cover ;
  
@@ -52,7 +52,7 @@ nav h1{
 }
 
 nav h1 span{
-   color: #16a085;
+   color: #ff6b81;
    font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
@@ -68,12 +68,12 @@ nav ul li{
   background: #ff6b81;
   padding: 8px;
   border-radius: 8px;
-  /* box-shadow: 5px 5px 5px 5px; */
+  
   box-shadow: 0 0 5px #ff6b81;
   color: #fff;
  }
  ul li a{
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
@@ -104,19 +104,171 @@ nav ul li{
 
 .header_text{
   margin-top: 20%;
-  font-size: 30px;
+  font-size: 40px;
   color: var(--text-color);
+  font-weight: bold;
+  
+}
+
+.pra{
+  font-size: 24px;
 }
 
 .header_text h1{
 color: var(--hover-color);
 font-style: italic;
 font-family: '"Kaushan Script", cursive;';
+
 }
 
 .header_text p{
   font-family: "Poppins", sans-serif;
+  color: #fff;
 }
+
+
+#about{
+  padding: 40px 0 40px 70px;
+  color: #000;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
+}
+
+.about_col_1{
+  flex-basis: 35%;
+  
+}
+.about_col_1 img{
+width: 100%;
+border-radius: 15px;
+}
+.about_col_2 {
+  flex-basis: 50%;
+  text-align: left;
+}  
+
+.sub_title{
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.tab_titles{
+  display: flex;
+  margin: 20px 0 40px ;
+}
+
+.tab_links{
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+.tab_links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff6b81;
+  left: 0;
+  bottom: -8px;
+  position: absolute;
+  transition: 0.5s;
+
+}
+.tab_links.active_link::after{
+  width: 50%;
+}
+
+
+.tab_contents ul li{
+  margin: 10px 0;
+  list-style: none;
+}
+
+.tab_contents ul li span{
+  color: #ff6b81;
+  font-size: 14px;
+}
+
+.tab_contents{
+  display: none;
+}
+.tab_contents.active_tab{
+  display: block;
+}
+
+
+/* ------service------ */
+
+.Services{
+  padding: 30px 70px;
+}
+
+.service_list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
